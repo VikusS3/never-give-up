@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>add-to-bag</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: sans-serif;
+      }
+
+      img {
+        width: 295px;
+        height: auto;
+        border: 2px solid rgb(102, 102, 102);
+        border-radius: 8px;
+        padding: 4px;
+      }
+
+      article {
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        gap: 32px;
+        width: 950px;
+      }
+
+      div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 32px;
+
+        & header {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          margin-top: 16px;
+
+          & span {
+            color: #468efa;
+            font-weight: 700;
+            font-size: 12px;
+          }
+
+          & h1 {
+            font-size: 36px;
+            width: 400px;
+          }
+
+          & p {
+            color: rgb(122, 122, 122);
+            font-weight: 500;
+            font-size: 14px;
+            margin-top: 4px;
+          }
+        }
+
+        & main {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+
+          & div {
+            display: flex;
+            flex-direction: row;
+            justify-content: stretch;
+            align-items: center;
+
+            & h2 {
+              font-size: 30px;
+            }
+
+            & span {
+              background-color: #a9ccff;
+              color: #4e91fc;
+              padding: 6px;
+              font-weight: bold;
+              border-radius: 6px;
+              letter-spacing: 1px;
+              margin-left: -16px;
+            }
+          }
+
+          & strong {
+            margin-top: 16px;
+            font-size: 12px;
+          }
+
+          & ul {
+            list-style: none;
+            display: flex;
+            gap: 24px;
+
+            > li {
+              font-weight: bold;
+              font-size: 14px;
+              padding: 8px 10px;
+            }
+
+            > li:nth-child(2) {
+              background-color: black;
+              color: white;
+            }
+          }
+        }
+
+        & footer {
+          width: 100%;
+
+          & button {
+            background-color: #1a76ff;
+            border: none;
+            color: white;
+            width: 100%;
+            border-radius: 4px;
+            padding: 8px 0px;
+          }
+        }
+      }
+
+      main > span {
+        color: #aaaaaa;
+        text-decoration: line-through;
+        font-size: 14px;
+        font-weight: bold;
+        margin-top: -4px;
+      }
+    </style>
+  </head>
+  <body>
+    <article>
+      <img src="./shirt.jpg" alt="" />
+      <div>
+        <header>
+          <span> POLO RAPH </span>
+          <h1>Custom Fit Polo Bear Oxford Shirt</h1>
+          <p>Dark blue polo with classic cut. Made of smooth and soft cotton</p>
+        </header>
+        <main>
+          <div>
+            <h2>$ 99.00</h2>
+            <span>-25%</span>
+          </div>
+
+          <span>$132.00</span>
+
+          <strong>CHOOSE SIZE</strong>
+          <ul>
+            <li>S</li>
+            <li>M</li>
+            <li>L</li>
+            <li>XL</li>
+            <li>XXL</li>
+          </ul>
+        </main>
+        <footer>
+          <button>ADD TO BAG</button>
+        </footer>
+      </div>
+    </article>
+  </body>
+</html>
